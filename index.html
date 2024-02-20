@@ -6,54 +6,128 @@
     <title>Responsive Website Example</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap" rel="stylesheet">
 </head>
-<body>
+
+<html>
+   <body>
+ <div class="header">
+     <h1>The Code Review</h1>
+ </div>
+ 
+    <div class="main-content">
+
+   
+    <div class="intro">
+        <h2>Signup for our newsletter</h2>
+        <p>Get the down low on your code - when you can't see the divs for the p's.</p>
+    </div>
     
-    <header>
-      <h1 class="centered">The Code Review</h1>
-    </header>
+<section>
+   <form action="#" method="post">
+   
+           <fieldset>
+   
+               <legend><strong>Contact Information</strong></legend>
+   
+               <div class="input">
+                   <label for="first">First Name</label>
+                   <input type="text" id="first" name="first" placeholder="required"/>
+               </div>
+   
+               <div class="input">
+                   <label for="last">Last Name</label>
+                   <input type="text" id="last" name="last"  placeholder="required"/>
+               </div>
+   
+               <div class="input">
+                   <label for="phone">Phone Number</label>
+                   <input type="tel" id="phone" name="phone" placeholder="9 digit format, no dashes"/>
+                   </div>  
+   
+      <div class="input">
+     <label for="address">Street Address</label>
+     <input type="text" id="address" name="address" />
+     </div>
+   
+      <div class="input">
+     <label for="city">City</label>
+     <input type="text" id="city" name="city" />
+     </div>
+   
+      <div class="input">
+     <label for="state">State</label>
+     <select id="state" name="state">
+       <option value="choose" selected>Choose State</option>
+       <option value="AL">Alabama</option>
+         </select>
+       </div>
+   
+      <div class="input">
+     <label for="zip">Zip Code</label>
+     <input type="number" id="zip" name="zip" />
+     </div>
+   
+     </fieldset>
+   
+   <hr>
 
-   <main>
-        <div class="wrapper">
-            <section class="intro">
-                <h2>Sign up for our newsletter</h2>
-                <p>Get the latest news on how your code is doing right in your inbox</p>
-            </section>
-        </div>
-    </main>
+<fieldset>
+<legend><strong>Newsletter</strong></legend>
+      <p>Select the type of code news you'd like delivered</p>
 
-        <div class="wrapper">
-            <section>
-                <form>
-                    <fieldset>
-                        <legend>Delivery information</legend>
-                        <div class="left-col">
-                            <p class="hint">* - required field</p>
-                        </div>
-                        <div class="right-col">
-                            <label for="name">Your name *</label>
-                        </div>
-                        
-                        <input type="text"  id="name" name="user-name"/>
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="user-email"/>
-                        <p class="hint">Receipt wll be send to this address</p>
-                        <label for="address1">Street Address</label>
-                        <input type="text" id="address1" name="user-address1">
-                        <label for="address2">Apartment Address</label>
-                        <input type="text" id="address2" name="user-address2">
-                        <label for="zip">Zip Code</label>
-                        <input type="text" id="zip" name="zip">
-                        
-                    </fieldset>
-                </form>
-            </section>
-        </div>
+    <div class="checkbox">
+    <label for="cbox1" class="lower"><input type="checkbox" id="cbox1" value="HTML_checkbox"> HTML News</label>
+    </div>
+    <div class="checkbox">
+     <label for="cbox2" class="lower"><input type="checkbox" id="cbox2" value="CSS_checkbox"> CSS News</label>
+     </div>
+     <div class="checkbox">
+      <label for="cbox3" class="lower"><input type="checkbox" id="cbox3" value="Javascript_checkbox"> Javascript News</label>
+      </div>
+      <div class="checkbox">
+      <label for="cbox4" class="lower"><input type="checkbox" id="cbox4" value="All_checkbox"> All the News</label>
+      </div>
+</fieldset>
+<hr>
+<fieldset>
+<p class="news">Newsletter format</p>
 
-    <footer>
-     <p class="centered">Copyright: The Code Review</p>
-    </footer>
+<div class="radioinput">
+<input type="radio" name="format" id="html" value="HTML" checked> <label for="html" class="radio">HTML</label>
+ </div>
+
+<div class="radioinput">
+<input type="radio" name="format" id="plaintext" value="Plain Text"> <label for="plaintext" class="radio">Plain Text</label>
+ </div>
+
+
+ <div class="input">
+ <p class="news">Other options you'd like to hear about</p>
+<textarea></textarea>
+</div>
+
+<div class="input">
+<label for="refer">How did you hear about us?</label>
+  <select id="refer" name="refer">
+    <option value="TC">Techcrunch</option>
+    <option value="GI">Gizmodo</option>
+    <option value="TH">Treehouse</option>
+    <option value="CS">Code School</option>
+    <option value="OT">Other</option>
+</select>
+ </div>
+<button type="submit">Sign Up</button>
+
+</fieldset>
+   </form>
+</section>
+    </div>
+    
+<footer>
+<p class="last">Copyright The Code Review</p>
+</footer>
+
 </body>
 </html>
