@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+     v2.0 | 20110126
+     License: none (public domain)
+  */
+  
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+ /* Header */ 
+ 
+ header {
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        padding:2%;
+        background-color:#2d3945;
+        color: #f8f8f8;
+    }
+
+h1 {
+    font-size: 2rem;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+ 
+
+  /* Main */
+
+ 
+p {
+    font-size: 1rem;
+    margin: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color:  #00464a;
+  }
+  
+.centered{
+  text-align: center;
+}
+
+ .wrapper {
+    padding: 0rem 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .right-col{
+    background: pink;
+  }
+/* OPEN FORM STYLING - UNIVERSAL */
+
+
+legend {
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 5px;
+}
+label {
+    display: block; 
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+}
+input, textarea {
+    display: block; 
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px; 
+    font-size: 18px;
+    color: #333;
+    font-family: 'Nunito', sans-serif;
+}
+input:focus, textarea:focus {
+    outline: 3px solid #09f;
+}
+
+.hint {
+    font-weight: 300;
+    color: #666;
+    font-size: 16px;
+}
+textarea {
+    height: 100px;
+}
+button {
+    width: 100%;
+    max-width: 430px;
+    padding: 12px 0;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    margin: 1.5rem auto 2.5rem;
+    display: block;
+    cursor: pointer;
+}
+
+.error-input {
+    border: 3px solid #d00;
+}
+.error-text {
+    color: #d00;
+}
+
+/* CLOSE FORM STYLING - UNIVERSAL */
+
+/* LAYOUT */
+
+.wrapper{
+  width: 60%;
+}
+
+
+
+    /* Media Queries */
+
+@media (min-width: 768px) {
+
+}
+
+    @media (min-width: 1024px) {
+ 
+      
+}
