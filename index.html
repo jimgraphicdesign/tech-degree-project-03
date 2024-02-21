@@ -66,7 +66,7 @@
    
       <div class="input">
      <label for="zip">Zip Code</label>
-     <input type="number" id="zip" name="zip" />
+     <input type="text" id="zip" name="zip" />
      </div>
    
      </fieldset>
@@ -74,53 +74,48 @@
    <hr>
 
 <fieldset>
-<legend><strong>Newsletter</strong></legend>
-      <p>Select the type of code news you'd like delivered</p>
-
-    <div class="checkbox">
-    <label for="cbox1" class="lower"><input type="checkbox" id="cbox1" value="HTML_checkbox"> HTML News</label>
-    </div>
-    <div class="checkbox">
-     <label for="cbox2" class="lower"><input type="checkbox" id="cbox2" value="CSS_checkbox"> CSS News</label>
-     </div>
-     <div class="checkbox">
-      <label for="cbox3" class="lower"><input type="checkbox" id="cbox3" value="Javascript_checkbox"> Javascript News</label>
-      </div>
-      <div class="checkbox">
-      <label for="cbox4" class="lower"><input type="checkbox" id="cbox4" value="All_checkbox"> All the News</label>
-      </div>
+   <legend><strong>Newsletter</strong></legend>
+         <p>Select the type of code news you'd like delivered</p>
+                <label>
+                  <input type="checkbox" name="example" value="HTML News" checked="">
+                  <span>HTML News</span>
+                </label>
+                <label>
+                  <input type="checkbox" name="example" value="CSS News">
+                  <span>CSS News</span>
+                </label>
+                <label>
+                   <input type="checkbox" name="example" value="CSS News">
+                   <span>Javascript News</span>
+                 </label>
+                 <label>
+                     <input type="checkbox" name="example" value="CSS News">
+                     <span>All News</span>
+                  </label>
+                
 </fieldset>
+
 <hr>
+
 <fieldset>
-<p class="news">Newsletter format</p>
+   <p>Newsletter Format</p>
+       <label>
+         <input type="radio" name="example" value="HTML" checked="">
+         <span>HTML</span>
+       </label>
+       <label>
+         <input type="radio" name="example" value="CSS News">
+         <span>Plain text</span>
+       </label>
+       <label>
+         <p class="news">Other options you'd like to hear about</p>
+         <textarea></textarea>
+        </label>
+</fieldset>
 
-<div class="radioinput">
-<input type="radio" name="format" id="html" value="HTML" checked> <label for="html" class="radio">HTML</label>
- </div>
-
-<div class="radioinput">
-<input type="radio" name="format" id="plaintext" value="Plain Text"> <label for="plaintext" class="radio">Plain Text</label>
- </div>
-
-
- <div class="input">
- <p class="news">Other options you'd like to hear about</p>
-<textarea></textarea>
-</div>
-
-<div class="input">
-<label for="refer">How did you hear about us?</label>
-  <select id="refer" name="refer">
-    <option value="TC">Techcrunch</option>
-    <option value="GI">Gizmodo</option>
-    <option value="TH">Treehouse</option>
-    <option value="CS">Code School</option>
-    <option value="OT">Other</option>
-</select>
- </div>
 <button type="submit">Sign Up</button>
 
-</fieldset>
+
    </form>
 </section>
     </div>

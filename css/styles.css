@@ -91,6 +91,7 @@ p{
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.5rem;
+  text-align: left;
 }
 
 input{
@@ -109,19 +110,21 @@ input[type=text], input[type=number], input[type=tel], textarea, select {
     padding: 3%;
     margin: 1% 0 1% 0;
     background-color: #e0e0d1;
-    max-width: 95%;
+    max-width: 100%;
     transition: background-color 2s;
     line-height: 2rem;
     font-size: inherit;
 }
 
+select{
+  height: 70px;
+}
 
 input[type=text]:focus, input[type=number]:focus, input[type=tel]:focus, textarea:focus, select:focus{
     background-color: white;
 }
 
 label {
-    display: block;
     margin-top: 1%;
     margin-bottom: 1%;
     text-align: left;
@@ -147,6 +150,11 @@ legend {
 
 select {
     margin-top: 1%;
+}
+
+ input, select {
+    width: auto;
+    padding: 0;
 }
 
 .header {
@@ -223,32 +231,63 @@ footer{
 @media screen and (min-width: 1024px) {
 
     input, select {
-        width: 66%;
+        padding: 0;
     }
 
     label {
 
-        text-align: right;
-        width: 33%;
+        text-align: left;
+        width: auto;
+        padding: 1%;
+        line-height: 2rem;
+    }
+    
+    input[type=text], input[type=number], input[type=tel], input[type=select], select {
+        border-radius: 2px;
+        padding: 3%;
+        margin: 1% 0 .5% 0;
+        background-color: #e0e0d1;
+        border: 0;
+        width: 75%;
+        height: 5%;
+        transition: background-color 2s;
+        line-height: 2rem;
+        font-size: inherit;
+    }
+    
+    textarea{
+      width: 100%;
+      padding: 0;
+      margin: 1% 0 1% 0;
+    }
+        
+    select{
+      height: 70px;
+      width:75%;
+      margin: 0;
+      border: 0;
+      border-radius: 0;
     }
 
     .lower {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
     margin-top: 1%;
     margin-bottom: 1%;
     text-align: left;
+    border: 1px solid green;
     }
 
     .checkbox {
-        flex: 1;
+        flex: available;
+        border: 1px solid red;
     }
 
 
 
     .select, .news {
         text-align: left;
+        width: 100%;
     }
 
     .input {
@@ -259,7 +298,7 @@ footer{
 
 
     .main-content {
-        max-width: 45%;
+        width: 70%;
 
 }
 
