@@ -144,8 +144,6 @@ legend {
  option{
    font-size: 1.25rem;
    font-weight: 300;
-   white-space-collapse: collapse;
-   text-wrap: nowrap;
  }
 
 select {
@@ -199,6 +197,8 @@ select {
 
 .last {
     margin-bottom: 1%;
+    text-align: center;
+    color: white;
 }
 
 .main-content {
@@ -277,12 +277,6 @@ footer{
     text-align: left;
     border: 1px solid green;
     }
-
-    .checkbox {
-        flex: available;
-        border: 1px solid red;
-    }
-
 
 
     .select, .news {
