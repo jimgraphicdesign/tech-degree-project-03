@@ -1,306 +1,197 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+
 body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  font-family: 'Hedvig Letters Sans', sans-serif;
 }
 
-/* RESET END */
-
-html {
-    font-family: 'Hedvig Letters Sans', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
+main {
+  width: 100%;
+  max-width: 600px;
 }
 
-button {
-    background-color: #00ace6;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    display: inline-block;
-    margin: 4% 0 4% 0;
-    width: 100%;
-    padding: 16px 65px;
-    font-size: 2rem;
+.intro-text {
+  margin: 5% 5% 1% 5%;
+  border-bottom: 4px solid teal;
+  text-align: center;
+}
+
+.intro-text h2{
+  font-size: 1.75rem;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+  padding: 5%;
+  background: teal;
+}
+
+header p  {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 0.3rem;
+}
+
+
+h2,legend {
+  color: teal;
+}
+
+
+h1 {
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #252525;
+  font-weight: 400;
+  padding: 1rem 0 1rem;
+  margin-bottom: 0.2rem;
+}
+
+strong{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+form{
+  border-top: 2px solid teal;
+  margin: 0 5%;
+  padding: 0;
 }
 
 fieldset {
-  border: 0 none; 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
-}
-
-.main-content {
-    margin: 0 auto;
-    max-width: 90%;
-
-}
-
-h1, button, legend {
-    font-family: 'Hedvig Letters Sans', sans-serif;
-}
-
-p{
-  font-family: 'Hedvig Letters Sans', sans-serif;
-  font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 1.5rem;
-  text-align: left;
-}
-
-input{
-  appearance: auto;
-  color: canvastext;
-  background-color: canvas;
   border: none;
-  padding-top: 1px;
-  -webkit-rtl-ordering: logical;
-  -webkit-user-select: text;
-  cursor: auto;
-}
-
-input[type=text], input[type=number], input[type=tel], textarea, select {
-    border-radius: 2px;
-    padding: 3%;
-    margin: 1% 0 1% 0;
-    background-color: #e0e0d1;
-    max-width: 100%;
-    transition: background-color 2s;
-    line-height: 2rem;
-    font-size: inherit;
-}
-
-select{
-  height: 70px;
-}
-
-input[type=text]:focus, input[type=number]:focus, input[type=tel]:focus, textarea:focus, select:focus{
-    background-color: white;
-}
-
-label {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    text-align: left;
-    line-height: 2rem;
+  margin-bottom: 2rem;
 }
 
 legend {
-    text-align: left;
+  display: block;
+  font-size: 1.3rem;
+  padding-top: 1.5rem;
+  margin-bottom: 1.2rem;
+  width: 100%;
 }
 
- legend strong{
-   font-weight: 700;
-   font-size:1.5rem;
-   line-height: 2rem;
- }
- 
- option{
-   font-size: 1.25rem;
-   font-weight: 300;
- }
-
-select {
-    margin-top: 1%;
+label {
+  font-size: 1rem;
+  color: #252525;
+  margin-bottom: 0.5rem;
 }
 
- input, select {
-    width: auto;
-    padding: 0;
+input, textarea {
+  padding: 1rem;
+  background-color: #c7c7c7;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  border: 0;
 }
 
-input .zip{
+input:focus{
+  border: 2px solid teal;
+}
+
+select{
+  appearance: none;
+  /* safari */
+  -webkit-appearance: none;
+  /* other styles for aesthetics */
+  width: 100%;
+  font-size: 1.15rem;
+  padding: 0.675em 6em 0.675em 1em;
+  background-color: #c7c7c7;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+fieldset div {
+  margin: 0.7rem 0;
+}
+
+input[type="checkbox"] , input[type="radio"] {
+  margin-right: 0.4rem;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+input#zip {
   width: 50%;
 }
 
-.header {
-    background-color: teal;
-    padding: 5%;
+button {
+  display: block;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 5px;
+  background-color: teal;
+  color: white;
+  font-size: 1.2rem;
 }
 
-.header h1 {
+footer {
+  font-size: 1rem;
+  text-align: center;
+  padding: 2rem 0 3rem;
+  color: teal;
+  background-color: rgb(206, 223, 223);
+  width: 100%;
+}
 
-    color: white;
-    font-size: 2rem;
- }
+/* Media Queries */
 
-.intro {
-     padding: 2.5% 5% 5% 5%;
-     margin: 0 0 1% 0;
-     border-bottom: 4px solid teal;
- }
- 
- .intro h2 {
-      color: teal;
-      font-size: 1.75rem;
-      font-weight: 700;
-      padding: 2.75%;
-  }
-  
-  h2 {
-      color: teal;
-      font-size: 1.75rem;
-      font-weight: 700;
-      padding: 2.75%;
+@media screen and (min-width:768px) {
+  header {
+    width: 100%;
+    padding: 2rem;
   }
 
-.input {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex: 1;
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
 
-.last {
-    margin-bottom: 1%;
-    text-align: center;
-    color: white;
-}
-
-.main-content {
-    background-color: white;
-    margin: 0 auto;
-    max-width: 90%;
-}
-
-footer{
- background-color: rgb(45, 65, 65);
-     padding: 5%;
- }
-
-.radio {
-    display: inline;
-}
-
-.radioinput, .news {
-    text-align: left;
-}
-
-::-webkit-input-placeholder {
-    font-style: italic;
-    font-family: 'Hedvig Letters Sans', sans-serif;
-    text-align: right;
-}
-
-
-
-@media screen and (min-width: 768px) {
-
-    input, select {
-        padding: 0;
-    }
-
-    label {
-        text-align: left;
-        width: auto;
-        padding: 1%;
-        line-height: 2rem;
-    }
-    
-    input[type=text], input[type=number], input[type=tel], input[type=select], select {
-        border-radius: 2px;
-        padding: 3%;
-        margin: 1% 0 .5% 0;
-        background-color: #e0e0d1;
-        border: 0;
-        width: 75%;
-        height: 5%;
-        transition: background-color 2s;
-        line-height: 2rem;
-        font-size: inherit;
-    }
-    
-    textarea{
-      width: 100%;
-      padding: 0;
-      margin: 1% 0 1% 0;
-    }
-        
-    select{
-      height: 70px;
-      width:75%;
-      margin: 0;
-      border: 0;
-      border-radius: 0;
-    }
-
-    .lower {
-    display: flex;
+  .input-wrap {
     flex-direction: row;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    text-align: left;
-    border: 1px solid green;
-    }
+    align-items: center;
+    margin: 1rem 0 1rem 0;
+  }
 
+  .input-wrap label{
+    width: 30%;
+  }
 
-    .select, .news {
-        text-align: left;
-        width: 100%;
-    }
+  .input-wrap input,
+  .input-wrap select {
+    width: 70%;
+  }
 
-    .input {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-
-
-    .main-content {
-        width: 70%;
-
-}
-
-.radioinput {
-    display: flex;
-
-}
+  input#zip {
+    width: 25%;
+  }
 }
