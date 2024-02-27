@@ -25,42 +25,27 @@
              <legend>Contact Information</legend>
               <div class="input-wrap">
                <label for="fname">Full Name</label>
-               <input
-                 type="text"
-                 id="fname"
-                 name="full_name"
-                 placeholder="Required"
-               />
+               <input type="text" id="fname" name="full_name" placeholder="Required">
              </div>
    
              <div class="input-wrap">
                <label for="email">Email Address</label>
-               <input
-                 type="email"
-                 id="email"
-                 name="user_email"
-                 placeholder="Required"
-               />
+               <input type="email" id="email" name="user_email" placeholder="Required">
              </div>
    
               <div class="input-wrap">
                <label for="number">Phone Number</label>
-               <input
-                 type="tel"
-                 id="number"
-                 name="user_number"
-                 placeholder="Required"
-               />
+               <input type="tel" id="number" name="user_number" placeholder="Required">
              </div>
    
               <div class="input-wrap">
                <label for="address">Street Address</label>
-               <input type="text" id="address" name="user_address" />
+               <input type="text" id="address" name="user_address">
              </div>
    
               <div class="input-wrap">
                <label for="city">City</label>
-               <input type="text" id="city" name="user_city" />
+               <input type="text" id="city" name="user_city">
              </div>
    
               <div class="input-wrap">
@@ -76,39 +61,40 @@
    
               <div class="input-wrap">
                <label for="zip">Zip Code</label>
-               <input type="text" id="zip" name="user_zip_code" />
+               <input type="text" id="zip" name="user_zip_code">
              </div>
            </fieldset>
    
             <hr>
-           <!--newsletter-->
+
            <fieldset>
              <legend class="news">Newsletter</legend>
              <p><strong>Select the newsletters you would like to receive.</strong></p>
              <div>
-               <input type="checkbox" id="newsletterA" name="newsletter" value="html-news" />
+               <input type="checkbox" id="newsletterA" name="newsletter" value="html-news">
                <label for="newsletterA">HTML NEWS</label>
              </div>
              <div>
-               <input type="checkbox" id="newsletter2" name="newsletter" value="css-news" />
+               <input type="checkbox" id="newsletter2" name="newsletter" value="css-news">
                <label for="newsletter2">CSS NEWS</label>
              </div>
              <div>
-               <input type="checkbox" id="newsletter3" name="newsletter" value="javascript-news"/>
+               <input type="checkbox" id="newsletter3" name="newsletter" value="javascript-news">
                <label for="newsletter3">Javascript News</label>
              </div>
-             <strong><p>Newsletter format</strong></p>
+             <p><strong>Newsletter format</strong></p>
              <div>
-               <input type="radio" id="html-format" name="newsletter-format" value="html-format" checked/>
+               <input type="radio" id="html-format" name="newsletter-format" value="html-format" checked>
                <label for="html-format">HTML</label>
              </div>
              <div>
-               <input type="radio" id="plain-text-format" name="newsletter-format" value="plain-text"/>
+               <input type="radio" id="plain-text-format" name="newsletter-format" value="plain-text">
                <label for="plain-text-format">Plain text</label>
              </div>
-            <label for="other-topics">
-               Other topics you'd like to hear about</label>
-            <textarea name="other-topics" input-wrapid="other-topics" input-wrapcols="30" rows="8"></textarea>
+            <div>
+               <label for="other-topics">Other topics you'd like to hear about</label>
+              <textarea id="other-topics" name="other-topics" rows="4" cols="50"></textarea>
+            </div>
             <button type="submit">Sign Up</button>
            </fieldset>
          </form>
@@ -118,4 +104,3 @@
        <footer>Copyright The Code Review</footer>
      </body>
    </html>
-</html>
